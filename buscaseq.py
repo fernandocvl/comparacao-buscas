@@ -87,6 +87,8 @@ while ctrl < 100:
     #variaveis de controle do tempo
     t0=0
     t1=0
+    #utiliza o mesmo seed para o conjunto
+    random.seed(ctrl)
     #valor para busca aleatória
     num = random.choice(arrbusca)
     #mede tempo inicial

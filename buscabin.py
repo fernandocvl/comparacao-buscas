@@ -32,8 +32,8 @@ arranjo10k = list(range(0, 10000))
 arranjo100k = list(range(0, 100000))
 
 #variaveis auxiliares para buscas
-arrbusca = arranjo1k
-ultimo = ult1k
+arrbusca = arranjo100k
+ultimo = ult100k
 
 #define saida em arquivo texto
 #sys.stdout = open("results.txt", "w")
@@ -93,6 +93,8 @@ while ctrl < 100:
     #variaveis de controle do tempo
     t0=0
     t1=0
+    #utiliza o mesmo seed para o conjunto
+    random.seed(ctrl)
     #valor para busca aleatória
     num = random.choice(arrbusca)
     #mede tempo inicial
